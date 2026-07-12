@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-gold-50: #fefdf0;
+  --color-gold-100: #fcf8c4;
+  --color-gold-200: #f9ef86;
+  --color-gold-300: #f3df42;
+  --color-gold-400: #e7c515;
+  --color-gold-500: #d4aa11;
+  --color-gold-600: #b5860b;
+  --color-gold-700: #91610b;
+  --color-gold-800: #764c0e;
+  --color-gold-900: #623e11;
+  --color-gold-950: #392006;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Scrollbar customization */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(212, 170, 17, 0.3);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(212, 170, 17, 0.5);
+  }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f9ef86 0%, #d4aa11 50%, #764c0e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 15px rgba(212, 170, 17, 0.15);
+  border-color: rgba(212, 170, 17, 0.3);
+}
+
+.gold-bg-glow {
+  background: radial-gradient(circle at center, rgba(212, 170, 17, 0.12) 0%, transparent 70%);
+}
+
+.dark-glass {
+  background: rgba(15, 15, 15, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.light-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
