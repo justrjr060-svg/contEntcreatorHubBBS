@@ -1,0 +1,6 @@
+{
+  "name": "Creator Hub",
+  "description": "A premium membership platform where creators and supporters connect, subscribe, access exclusive content, and join private communities with a luxurious black, white, and gold theme.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
